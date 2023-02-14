@@ -12,7 +12,9 @@ const App = () => {
     const bool = true;
     return (
         <div className={classNames('app', {}, [theme])}>
-            <button onClick={toggleTheme}>TOGGLE</button>
+            <button type="button" onClick={toggleTheme}>
+                TOGGLE
+            </button>
             <Link to="/">Главная</Link>
             <Link to="/about">О сайте</Link>
             <Suspense fallback={<div>Loading...</div>}>
